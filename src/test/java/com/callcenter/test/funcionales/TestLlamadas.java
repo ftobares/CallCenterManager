@@ -135,6 +135,7 @@ public class TestLlamadas {
 	public void procesarMasivamenteLlamadas() throws Exception {
 		
 		int threadCount = 25;
+		long timeOut = 350;
 
 		/** Logueo los empleados */
 		Empleado director = new Director("Director Jose");
@@ -165,7 +166,7 @@ public class TestLlamadas {
 			executor.execute(MyRunnable(dispatcher, i));
 		}
 		
-		executor.awaitTermination(350, TimeUnit.SECONDS);
+		executor.awaitTermination(timeOut, TimeUnit.SECONDS);
 		
 		executor.shutdown();
 
