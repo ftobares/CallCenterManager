@@ -34,8 +34,7 @@ public class Empleado implements Comparable<Empleado>{
 	public void setPrioridad(int prioridad) {
 		this.prioridad = prioridad;
 	}	
-
-	@Override
+	
 	public int compareTo(Empleado o) {
 		if(this.prioridad > o.getPrioridad()){
 			return 1;
