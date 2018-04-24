@@ -48,7 +48,7 @@ public class Dispatcher {
 	/**
 	 * Metodo encargado de despachar las llamadas a partir de un codigo de llamada.
 	 * Pre-requisito: 
-	 * 		Los empleados deben loguearse utilizando EmpleadoQueueService.loguearEmpleado
+	 * 		Los empleados deben loguearse utilizando QueueService.encolarEmpleado
 	 * */
 	public void dispatchCall(int idLlamada) {
 
